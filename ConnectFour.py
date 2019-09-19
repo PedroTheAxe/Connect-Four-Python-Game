@@ -139,6 +139,7 @@ def winning_move(board, piece):
 while not GAME_OVER:
 	
 	for event in pygame.event.get():
+		
 		if event.type == pygame.QUIT:
 			sys.exit()
 
@@ -201,4 +202,5 @@ while not GAME_OVER:
 			TURN = TURN % 2
 
 			if GAME_OVER:
+				
 				pygame.time.wait(3000) #Time before sys.exit after win (in ms)
